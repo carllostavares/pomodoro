@@ -1,6 +1,6 @@
 ### Tarefas:
 
-- [ ] Criaaar um cronometro de 25 minutos
+- [X] Criaaar um cronometro de 25 minutos
 - [ ] Criar uma interface
 - [ ] Mapear o tempo de 25min e  depois de começar dar um aviso do téminio 
 - [ ] Exibir visualmente o tempo restante
