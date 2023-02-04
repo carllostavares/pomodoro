@@ -1,21 +1,26 @@
-const segundosPomodoro = 4000 //25*60*1000
+const milisegundosPomodoro = 4000 //25*60*1000
 const disparador = document.querySelector('#disparador')
+let milisegundoRestante = milisegundosPomodoro - 1000;
+let contador;
 
 disparador.addEventListener('click',() => {
-  console.log('ativado !')
+  console.log('Disparador ativado !')
 
-//Criando cronometro
-  setTimeout(() => {
-    console.log("JÁ CONTOU !!!");
-    alert("Seu tempo de produção acabou. Vá descansare !")
-    
-    clearInterval(contador)
-  }, segundosPomodoro) 
+  console.log('faltam', (milisegundosPomodoro/1000));
 
-let contador = setInterval('contandoSegundos()',1000);
+  contador = setInterval('contandoSegundos()',1000);
 
 })
 
 function contandoSegundos(){
-  console.log("Conta")
+
+  if(milisegundoRestante == 0) {
+    console.log("Acabou pomodoro !!");
+    alert("Seu tempo de produção acabou. Vá descansare !");
+
+    clearInterval(contador);
+  }else{
+    console.log('faltam',(milisegundoRestante/1000));
+  }
+  milisegundoRestante -= 1000;
 }

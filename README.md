@@ -5,7 +5,7 @@
 - [X] Conectar o ativador do crônometro comn a função de criar cronometro
 - [X] Disparar um aviso ao fim do cronometro
 - [X] Criar lógica de contador de segundos
-- [ ] Calcular o tempo restante
+- [X] Calcular o tempo restante
 - [ ] Criar o tempo restante o componente do cronometro
 - [ ] Exibir visualmente o tempo restante
 - [ ] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
