@@ -6,7 +6,8 @@
 - [X] Disparar um aviso ao fim do cronometro
 - [X] Criar lógica de contador de segundos
 - [X] Calcular o tempo restante do cronometro.
-- [ ] Criar o tempo restante o componente do cronometro
+- [X] Melhorando a experiência do disparador do disparador do cronometro
+- [X] Criar o componente do tempo restante na tela
 - [ ] Exibir visualmente o tempo restante
 - [ ] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
 - [ ] Exibir uma contagem de pomodoros

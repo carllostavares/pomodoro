@@ -28,6 +28,11 @@ body{
     border-radius: 6px;
 }
 
+.cronometro{
+    font-size: 3em;
+    margin: 0 0 1rem;
+}
+
 .start{
     background:#ffffff;
     border:none ;
