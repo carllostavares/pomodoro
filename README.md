@@ -8,7 +8,7 @@
 - [X] Calcular o tempo restante do cronometro.
 - [X] Melhorando a experiência do disparador do disparador do cronometro
 - [X] Criar o componente do tempo restante na tela
-- [ ] Exibir visualmente o tempo restante
+- [X] Exibir visualmente o tempo restante
 - [ ] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
 - [ ] Exibir uma contagem de pomodoros
 - [ ] Depois de 4 pomodoros ativar um intervalo londo de 15min
