@@ -36,4 +36,5 @@ body{
     padding: 1em 2em;
     text-transform: uppercase;
     color: #c84949;
+    cursor: pointer;
 }
