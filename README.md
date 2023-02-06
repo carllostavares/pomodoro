@@ -13,6 +13,7 @@
 - [ ] Exibir uma contagem de pomodoros
 - [ ] Depois de 4 pomodoros ativar um intervalo londo de 15min
 - [ ] Botao pausar e retornar ao contador
+- [ ] Ter uma aparesentação visual melhhor para o aviso de fim do cronometro
 - [ ] Avisao sonoro para cada início e fim
 - [ ] Ativar função de ir no automático para a próxima etapa do pomodoro
 
