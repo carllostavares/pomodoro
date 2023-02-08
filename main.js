@@ -25,8 +25,13 @@ function contadorDeSegundos() {
 
     if(disparador.textContent=="Start"){
       disparador.textContent = "Intervalo"
+      document.querySelector('body').style.background = "#287b7e";
+      disparador.style.color = "#287b7e"
+
     }else{
       disparador.textContent="Start"
+      document.querySelector('body').style.background = "#c84949";
+      disparador.style.color = "#c84949"
     }
 
     clearInterval(contador)
