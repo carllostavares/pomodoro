@@ -4,17 +4,27 @@ const disparador = document.querySelector('#disparador');
 const cronometro = document.querySelector('#cronometro');
 let milissegundosRestante = 0;
 let contador
+let modo = ''
 
 disparador.addEventListener('click',() => {
   console.log('Disparador ativado !')
 
-  if(disparador.textContent=="Start"){
-    milissegundosRestante = milisegundosPomodoro - 1000
-  }else{
-    milissegundosRestante = milissegundosIntervalo - 1000
+    if(disparador.textContent=="Pausar"){
+      clearInterval(contador)
+      disparador.textContent="Retomar"
+    }else{
+      if(disparador.textContent=="Start"){
+        modo = "pomodoro"
+        milissegundosRestante = milisegundosPomodoro - 1000
+      }else if(disparador.textContent=="intervalo"){
+        modo = "intervalo"
+        milissegundosRestante = milissegundosIntervalo - 1000
+      }
+      
+      disparador.textContent="Pausar"
+      contador = setInterval('contadorDeSegundos()',1000);
   }
-  
-  contador = setInterval('contadorDeSegundos()',1000);
+
 })
 
 function contadorDeSegundos() {
@@ -23,12 +33,12 @@ function contadorDeSegundos() {
     cronometro.textContent = "00:00";
     console.log("Seu tempo de produção acabou. Vá descansare !");
 
-    if(disparador.textContent=="Start"){
-      disparador.textContent = "Intervalo"
+    if(modo == "pomodoro"){
+      disparador.textContent = "intervalo"
       document.querySelector('body').style.background = "#287b7e";
       disparador.style.color = "#287b7e"
 
-    }else{
+    }else if(modo == "intervalo"){
       disparador.textContent="Start"
       document.querySelector('body').style.background = "#c84949";
       disparador.style.color = "#c84949"

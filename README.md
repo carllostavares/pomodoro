@@ -10,10 +10,10 @@
 - [X] Criar o componente do tempo restante na tela
 - [X] Exibir visualmente o tempo restante
 - [X] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
-- [X] Mudando as cores no momento do intervalo
+- [X] Mudando as cores no momento do intervalo 
+- [ ] Botao pausar e retornar ao contador
 - [ ] Exibir uma contagem de pomodoros
 - [ ] Depois de 4 pomodoros ativar um intervalo londo de 15min
-- [ ] Botao pausar e retornar ao contador
 - [ ] Ter uma aparesentação visual melhhor para o aviso de fim do cronometro
 - [ ] Avisao sonoro para cada início e fim
 - [ ] Ativar função de ir no automático para a próxima etapa do pomodoro
