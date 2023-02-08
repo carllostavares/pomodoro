@@ -9,7 +9,7 @@
 - [X] Melhorando a experiência do disparador do disparador do cronometro
 - [X] Criar o componente do tempo restante na tela
 - [X] Exibir visualmente o tempo restante
-- [ ] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
+- [X] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
 - [ ] Exibir uma contagem de pomodoros
 - [ ] Depois de 4 pomodoros ativar um intervalo londo de 15min
 - [ ] Botao pausar e retornar ao contador
@@ -24,5 +24,7 @@
 - [ ] Ter uma listas de tarefe executadas
 - [ ] Salvar o sstatus no localStorrage para se a aba for encerrada.
 - [ ] Extensão do navegador
-- [ ] Alterar tema
+- [ ] Alterar o tema
+- [ ] Função de esconder o timer
+- [ ] Acessibilidade para cronometro com a tag <time>
 
