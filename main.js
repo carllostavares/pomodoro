@@ -1,7 +1,8 @@
-const milisegundosPomodoro = 10000 //25*60*1000
-const milissegundosIntervalo = 300000;
+const milisegundosPomodoro = 4000 //25*60*1000
+const milissegundosIntervalo = 4000;
 const disparador = document.querySelector('#disparador');
 const cronometro = document.querySelector('#cronometro');
+const historico = document.querySelector('#historico');
 let milissegundosRestante = 0;
 let contador
 let modo = ''
@@ -16,6 +17,7 @@ disparador.addEventListener('click',() => {
       if(disparador.textContent=="Start"){
         modo = "pomodoro"
         milissegundosRestante = milisegundosPomodoro - 1000
+        historico.textContent = parseInt(historico.textContent) +1
       }else if(disparador.textContent=="intervalo"){
         modo = "intervalo"
         milissegundosRestante = milissegundosIntervalo - 1000
