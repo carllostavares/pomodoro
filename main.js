@@ -1,9 +1,11 @@
 const milisegundosPomodoro = 4000 //25*60*1000
-const milissegundosIntervalo = 4000;
+const milissegundosIntervaloCurto = 4000;
+const milissegundosIntervaloLongo =9000;
 const disparador = document.querySelector('#disparador');
 const cronometro = document.querySelector('#cronometro');
 const historico = document.querySelector('#historico');
-let milissegundosRestante = 0;
+const tamanhoDoCiclo = 4;  
+let  milissegundosRestante = 0;
 let contador
 let modo = ''
 
@@ -20,7 +22,13 @@ disparador.addEventListener('click',() => {
         historico.textContent = parseInt(historico.textContent) +1
       }else if(disparador.textContent=="intervalo"){
         modo = "intervalo"
-        milissegundosRestante = milissegundosIntervalo - 1000
+        //criar um intervalo de maior de 15 minutos após 4 intervalos.
+        if(historico.textContent % tamanhoDoCiclo == 0){
+          milissegundosRestante = milissegundosIntervaloLongo;
+        }else{
+          milissegundosRestante = milissegundosIntervaloCurto;
+        }
+        milissegundosRestante -=1000
       }
       
       disparador.textContent="Pausar"
