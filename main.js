@@ -22,13 +22,12 @@ disparador.addEventListener('click',() => {
         historico.textContent = parseInt(historico.textContent) +1
       }else if(disparador.textContent=="intervalo"){
         modo = "intervalo"
-        //criar um intervalo de maior de 15 minutos após 4 intervalos.
         if(historico.textContent % tamanhoDoCiclo == 0){
           milissegundosRestante = milissegundosIntervaloLongo;
         }else{
           milissegundosRestante = milissegundosIntervaloCurto;
         }
-        milissegundosRestante -=1000
+        milissegundosRestante -= 1000
       }
       
       disparador.textContent="Pausar"
@@ -45,15 +44,19 @@ function contadorDeSegundos() {
 
     if(modo == "pomodoro"){
       disparador.textContent = "intervalo"
-      document.querySelector('body').style.background = "#287b7e";
-      disparador.style.color = "#287b7e"
-
+      if(historico.textContent % tamanhoDoCiclo == 0){
+        document.querySelector('body').style.background = "#29678A";
+        disparador.style.color = "#29678A"
+      }else{
+        document.querySelector('body').style.background = "#287b7e";
+        disparador.style.color = "#287b7e"  
+      }
+   
     }else if(modo == "intervalo"){
       disparador.textContent="Start"
       document.querySelector('body').style.background = "#c84949";
       disparador.style.color = "#c84949"
     }
-
     clearInterval(contador)
   } else {
     cronometro.textContent = formatadorDoTempo(milissegundosRestante/1000)
