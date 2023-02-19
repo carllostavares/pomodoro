@@ -9,6 +9,8 @@ let  milissegundosRestante = 0;
 let contador
 let modo = ''
 
+const audioInicio = new Audio("./audio/inicio.m4a")
+
 disparador.addEventListener('click',() => {
   console.log('Disparador ativado !')
 
@@ -18,6 +20,8 @@ disparador.addEventListener('click',() => {
     }else{
       if(disparador.textContent=="Start"){
         modo = "pomodoro"
+        audioInicio.play()
+
         milissegundosRestante = milisegundosPomodoro - 1000
         historico.textContent = parseInt(historico.textContent) +1
       }else if(disparador.textContent=="intervalo"){
