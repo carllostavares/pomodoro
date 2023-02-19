@@ -29,8 +29,7 @@ O objetivo deste projeto foi desenvolver um sistema do Pomodoro em equipe durant
 - [X] Exibir uma contagem de pomodoros
 - [X] Depois de 4 pomodoros ativar um intervalo londo de 15min
 - [X] Ter uma aparesentação visual melhhor para o aviso de fim do cronometro
-- [ ] Avisao sonoro para cada início e fim
-- [ ] Ativar função de ir no automático para a próxima etapa do pomodoro
+- [X] Ativar função de ir no automático para a próxima etapa do pomodoro
 
 ### Extra:
 
@@ -56,5 +55,5 @@ O objetivo deste projeto foi desenvolver um sistema do Pomodoro em equipe durant
 
 ## Screenshots
 <p align="middle">
-<img src="#" width="100%" height="100%">
+<img src="#" width="100%" height="100%" alte="imagem do app">
 </p>
