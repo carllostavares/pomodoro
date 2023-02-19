@@ -9,7 +9,9 @@ let  milissegundosRestante = 0;
 let contador
 let modo = ''
 
-const audioInicio = new Audio("./audio/inicio.m4a")
+const audioInicio = new Audio("./audio/inicio.mp3")
+const audioFim = new Audio("./audio/fim.mp3")
+
 
 disparador.addEventListener('click',() => {
   console.log('Disparador ativado !')
@@ -26,6 +28,8 @@ disparador.addEventListener('click',() => {
         historico.textContent = parseInt(historico.textContent) +1
       }else if(disparador.textContent=="intervalo"){
         modo = "intervalo"
+        audioInicio.play()
+
         if(historico.textContent % tamanhoDoCiclo == 0){
           milissegundosRestante = milissegundosIntervaloLongo;
         }else{
@@ -47,6 +51,7 @@ function contadorDeSegundos() {
     console.log("Seu tempo de produção acabou. Vá descansare !");
 
     if(modo == "pomodoro"){
+      audioFim.play()
       disparador.textContent = "intervalo"
       if(historico.textContent % tamanhoDoCiclo == 0){
         document.querySelector('body').style.background = "#29678A";
@@ -57,6 +62,7 @@ function contadorDeSegundos() {
       }
    
     }else if(modo == "intervalo"){
+      audioFim.play()
       disparador.textContent="Start"
       document.querySelector('body').style.background = "#c84949";
       disparador.style.color = "#c84949"
