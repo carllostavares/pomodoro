@@ -12,48 +12,11 @@ O objetivo deste projeto foi desenvolver um sistema do Pomodoro em equipe durant
  ![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) 
 
 
-### Tarefas:
-
-- [X] Criar um cronometro de 25 minutos
-- [X] Criar o visual do ativador do crônometro
-- [X] Conectar o ativador do crônometro comn a função de criar cronometro
-- [X] Disparar um aviso ao fim do cronometro
-- [X] Criar lógica de contador de segundos
-- [X] Calcular o tempo restante do cronometro.
-- [X] Melhorando a experiência do disparador do disparador do cronometro
-- [X] Criar o componente do tempo restante na tela
-- [X] Exibir visualmente o tempo restante
-- [X] Ter uma outra ativação do cronometro, com 5min para salvar o intervalo
-- [X] Mudando as cores no momento do intervalo 
-- [X] Botao pausar e retornar ao contador
-- [X] Exibir uma contagem de pomodoros
-- [X] Depois de 4 pomodoros ativar um intervalo londo de 15min
-- [X] Ter uma aparesentação visual melhosr para o aviso de fim do cronometro
-- [ ] Ativar função de ir no automático para a próxima etapa do pomodoro
-
-### Extra:
-
-- [ ] Notificações no navegador para cada início e fim 
-- [ ] Configurar a quantidade de tempo de um bloco de trabalho e um bloco de intervalo.
-- [ ] Ter uma listas de tarefe executadas
-- [ ] Salvar o sstatus no localStorrage para se a aba for encerrada.
-- [ ] Extensão do navegador
-- [ ] Alterar o tema
-- [ ] Função de esconder o timer
-- [ ] Acessibilidade para cronometro com a tag <time>
-
-
 ## Funcionalidades
 
-:hammer_and_wrench: ...; <br>
-  
-  
-## Acesse
+<p>Marca 25 minutos com intervalos de 5 minutos. E a cada 4 pomodoros, o intervalo será de 15 minutos.</p>
 
-<a href="#">Inserir quando houver deploy</a>.
-
-
-## Screenshots
-<p align="middle">
-<img src="#" width="100%" height="100%" alte="imagem do app">
+## Adicionando aluno <br>
+<p align="center">
+<img src="./pomodoro.png">
 </p>

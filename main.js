@@ -1,6 +1,6 @@
-const milisegundosPomodoro = 4000 //25*60*1000
-const milissegundosIntervaloCurto = 4000;
-const milissegundosIntervaloLongo =9000;
+const milisegundosPomodoro = 25*60*1000;
+const milissegundosIntervaloCurto = 5*60*1000;;
+const milissegundosIntervaloLongo = 15*60*1000;;
 const disparador = document.querySelector('#disparador');
 const cronometro = document.querySelector('#cronometro');
 const historico = document.querySelector('#historico');
